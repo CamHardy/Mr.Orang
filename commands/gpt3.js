@@ -43,7 +43,7 @@ async function handleGPT3(interaction) {
             return;
         }
     } catch (err) {
-        await interaction.editReply({content: err.toString()});
+        console.error(err.toString());
         return;
     }
 
